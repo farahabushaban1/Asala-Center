@@ -31,8 +31,8 @@ Built with **PHP (no framework)** and **MySQL**, with a frontend using **HTML5 /
 │   ├── footer.php
 │   └── functions.php
 │
-├── database/              # Database schema
-│   └── schema.sql
+├── database/              # Database shop
+│   └── shop.sql
 │
 ├── config/                # Config files
 │   ├── config.php
@@ -63,13 +63,13 @@ Built with **PHP (no framework)** and **MySQL**, with a frontend using **HTML5 /
 
 1. **Clone the project:**
    ```bash
-   git clone https://github.com/username/asala-center.git
-   cd asala-center
+  git clone https://github.com/farahabushaban1/Asala-Center.git
+  cd Asala-Center
    ```
 
 2. **Database Setup:**
    - Create a new MySQL database called `shop`
-   - Import the schema file:
+   - Import the shop file:
      ```sql
      database/shop.sql
      ```
@@ -84,16 +84,16 @@ Built with **PHP (no framework)** and **MySQL**, with a frontend using **HTML5 /
 
 4. **Run locally (XAMPP / Laragon / PHP Built-in):**
    ```bash
-   php -S localhost:8000 -t .
+   php -S localhost:81 -t .
    ```
    Then open in browser:  
-   👉 `http://localhost:8000`
+   👉 `http://localhost:81`
 
 ---
 
 ## 🔐 Admin Panel
 
-- Access via: `http://localhost:8000/admin`
+- Access via: `http://localhost:81/admin`
 - Login with credentials from `users` table (`role = admin`).
 - Features:
   - Manage products
