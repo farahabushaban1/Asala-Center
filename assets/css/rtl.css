@@ -1,0 +1,734 @@
+/* RTL Support for Arabic Language */
+
+/* Global RTL */
+body {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Cairo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* RTL Navbar Base */
+[dir="rtl"] .navbar {
+    direction: rtl;
+}
+
+[dir="rtl"] .navbar .container {
+    direction: rtl;
+}
+
+/* Bootstrap RTL Overrides */
+.navbar-nav .nav-link {
+    margin: 0 1rem;
+}
+
+.navbar-nav.mx-auto {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* RTL Navbar Layout */
+[dir="rtl"] .navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+}
+
+[dir="rtl"] .navbar-brand {
+    order: 1;
+    margin-right: 0;
+    margin-left: 0;
+    flex-shrink: 0;
+}
+
+[dir="rtl"] .navbar-nav.mx-auto {
+    order: 2;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    z-index: 1;
+}
+
+[dir="rtl"] .navbar-nav.ms-auto {
+    order: 3;
+    margin-left: 0;
+    margin-right: 0;
+    flex-shrink: 0;
+}
+
+/* Language selector RTL */
+[dir="rtl"] .language-selector .nav-link {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+/* Cart icon RTL */
+[dir="rtl"] .cart-icon {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+/* RTL Navbar Specific Styles */
+[dir="rtl"] .navbar-nav.ms-auto {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+[dir="rtl"] .language-selector .nav-link {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+[dir="rtl"] .cart-icon {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+/* RTL Navbar Brand */
+[dir="rtl"] .navbar-brand {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    flex-shrink: 0;
+}
+
+/* RTL Navbar Container Override */
+[dir="rtl"] .navbar .container {
+    justify-content: space-between;
+}
+
+[dir="rtl"] .navbar-nav.ms-auto {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* RTL Navbar Brand Final Position */
+[dir="rtl"] .navbar-brand {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    flex-shrink: 0;
+}
+
+/* RTL Navbar Links Center */
+[dir="rtl"] .navbar-nav.mx-auto {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    z-index: 1;
+}
+
+/* RTL Navbar Right Side */
+[dir="rtl"] .navbar-nav.ms-auto {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    flex-shrink: 0;
+}
+
+/* RTL Navbar Final Layout */
+[dir="rtl"] .navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+
+[dir="rtl"] .navbar-brand {
+    flex: 0 0 auto;
+}
+
+[dir="rtl"] .navbar-nav.mx-auto {
+    flex: 0 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+[dir="rtl"] .navbar-nav.ms-auto {
+    flex: 0 0 auto;
+}
+
+/* Hero Section RTL */
+.hero-text {
+    text-align: right;
+}
+
+.hero-buttons .btn {
+    margin-right: 0;
+    margin-left: 1rem;
+}
+
+.hero-buttons .btn:last-child {
+    margin-left: 0;
+}
+
+/* About Section RTL */
+.about-item {
+    flex-direction: row-reverse;
+}
+
+.about-icon {
+    margin-right: 0;
+    margin-left: 1.5rem;
+}
+
+.about-text {
+    text-align: right;
+}
+
+/* Product Cards RTL */
+.product-content {
+    text-align: right;
+}
+
+[dir="rtl"] .product-description {
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+[dir="rtl"] .products-section .product-description {
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+[dir="rtl"] .row .product-card .product-description {
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+[dir="rtl"] .product-content {
+    text-align: right;
+}
+
+[dir="rtl"] .row .product-card .product-content {
+    text-align: right !important;
+}
+
+.add-to-cart i {
+    margin-right: 0;
+    margin-left: 6px;
+}
+
+[dir="rtl"] .add-to-cart i {
+    margin-left: 0;
+    margin-right: 6px;
+}
+
+/* Journey Section RTL */
+.journey-content {
+    text-align: right;
+}
+
+.journey-buttons .btn {
+    margin-right: 0;
+    margin-left: 0.5rem;
+}
+
+.journey-buttons .btn:last-child {
+    margin-left: 0;
+}
+
+.journey-buttons .btn i {
+    margin-right: 0;
+    margin-left: 3px;
+}
+
+/* Footer RTL */
+.footer .col-lg-4 {
+    text-align: right;
+}
+
+/* Footer Section Titles RTL */
+.footer-section .footer-title {
+    text-align: right;
+    margin-bottom: 0.25rem;
+}
+
+/* Footer Contact Section RTL */
+.footer-section .contact-info {
+    text-align: right;
+}
+
+/* Footer Social Section RTL */
+.footer-section .social-links {
+    text-align: right;
+}
+
+/* Fix Contact and Social columns content alignment */
+[dir="rtl"] .footer .col-lg-4:nth-child(3) .footer-section,
+[dir="rtl"] .footer .col-lg-4:nth-child(4) .footer-section {
+    text-align: right;
+}
+
+[dir="rtl"] .footer .col-lg-4:nth-child(3) .contact-info,
+[dir="rtl"] .footer .col-lg-4:nth-child(4) .social-links {
+    text-align: right;
+    display: block;
+    margin-top: 0;
+}
+
+[dir="rtl"] .footer .col-lg-4:nth-child(3) .contact-item,
+[dir="rtl"] .footer .col-lg-4:nth-child(4) .social-links .social-link {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+/* تنسيق أيقونات التواصل الاجتماعي في اللغة العربية */
+[dir="rtl"] .footer .col-lg-4:nth-child(4) .social-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+[dir="rtl"] .footer .col-lg-4:nth-child(4) .social-links .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin: 0;
+}
+
+[dir="rtl"] .footer .col-lg-4:nth-child(4) .social-links .social-link:hover {
+    background-color: #A51E3F;
+    transform: translateY(-2px);
+}
+
+/* إزالة جميع المسافات الإضافية من عمود تابعنا */
+[dir="rtl"] .footer .col-lg-4:nth-child(4) .footer-section {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+}
+
+[dir="rtl"] .footer .col-lg-4:nth-child(4) .footer-section .footer-title {
+    margin-bottom: 0.25rem !important;
+    padding-bottom: 0 !important;
+    line-height: 1 !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+[dir="rtl"] .footer .col-lg-4:nth-child(4) .footer-section .social-links {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+}
+
+/* تنسيق العمود نفسه */
+[dir="rtl"] .footer .col-lg-4:nth-child(4) {
+    line-height: 1 !important;
+    text-align: right !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* إزالة جميع المسافات من Bootstrap */
+[dir="rtl"] .footer .col-lg-4:nth-child(4) .mb-4 {
+    margin-bottom: 0 !important;
+}
+
+[dir="rtl"] .footer .col-lg-4:nth-child(4) * {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* تنسيق بسيط لعمود تابعنا */
+[dir="rtl"] .footer .col-lg-4:nth-child(4) {
+    text-align: right;
+}
+
+[dir="rtl"] .footer .col-lg-4:nth-child(4) .footer-title {
+    margin-bottom: 0.25rem;
+    margin-top: 0;
+}
+
+[dir="rtl"] .footer .col-lg-4:nth-child(4) .social-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* تنسيق بسيط لعمود اتصل بنا */
+[dir="rtl"] .footer .col-lg-4:nth-child(3) {
+    text-align: right;
+}
+
+[dir="rtl"] .footer .col-lg-4:nth-child(3) .footer-title {
+    margin-bottom: 0.25rem;
+    margin-top: 0;
+}
+
+[dir="rtl"] .footer .col-lg-4:nth-child(3) .contact-info {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+[dir="rtl"] .footer .col-lg-4:nth-child(3) .contact-item {
+    margin-bottom: 0.25rem;
+}
+
+[dir="rtl"] .footer .col-lg-4:nth-child(3) .contact-item:last-child {
+    margin-bottom: 0;
+}
+
+/* تنسيق خاص لعمود تابعنا */
+[dir="rtl"] .footer .col-lg-4:nth-child(4) .footer-section {
+    text-align: right !important;
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+[dir="rtl"] .footer .col-lg-4:nth-child(4) .footer-section .footer-title {
+    text-align: right !important;
+    display: block !important;
+    margin: 0 0 0.25rem 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+    font-size: 1.1rem !important;
+    font-weight: bold !important;
+}
+
+[dir="rtl"] .footer .col-lg-4:nth-child(4) .footer-section .social-links {
+    text-align: right !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+    position: relative !important;
+    top: 0 !important;
+    gap: 0.5rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* تنسيق خاص للأيقونات في عمود تابعنا */
+[dir="rtl"] .footer .col-lg-4:nth-child(4) .social-links .social-link {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+    vertical-align: top !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+    background-color: #000000 !important;
+    color: white !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+}
+
+[dir="rtl"] .footer .col-lg-4:nth-child(4) .social-links .social-link:hover {
+    background-color: #A51E3F !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Quick Links Section RTL */
+.quick-links-section {
+    margin-left: 0;
+    margin-right: 2rem;
+}
+
+/* Contact Section RTL */
+.contact-item {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    text-align: right;
+}
+
+.contact-item i {
+    margin-right: 0;
+    margin-left: 1rem;
+}
+
+.contact-item span,
+.contact-item a {
+    text-align: right;
+}
+
+/* Social Media Section RTL */
+.social-links {
+    justify-content: flex-start;
+    text-align: right;
+}
+
+.social-links .social-link {
+    margin-left: 0;
+    margin-right: 0.5rem;
+}
+
+.social-links .social-link:last-child {
+    margin-right: 0;
+}
+
+/* View All Button RTL */
+.view-all-btn i {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+.view-all-btn:hover i {
+    transform: translateX(-3px);
+}
+
+/* Mobile Top Actions RTL - الترتيب الصحيح للغة العربية */
+/* في RTL: [Logo] [زر القائمة] [زر السلة] [زر اللغة] */
+[dir="rtl"] .mobile-top-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: row-reverse; /* عكس الترتيب: السلة أولاً، ثم اللغة */
+}
+
+[dir="rtl"] .mobile-top-actions .language-selector .nav-link {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+[dir="rtl"] .mobile-top-actions .cart-icon {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* RTL Navbar Toggler Position */
+[dir="rtl"] .navbar-toggler {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
+
+/* RTL Navbar Container - Mobile */
+@media (max-width: 991.98px) {
+    [dir="rtl"] .navbar .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    
+    [dir="rtl"] .navbar-brand {
+        order: 1; /* اللوجو على اليمين */
+    }
+    
+    [dir="rtl"] .navbar-toggler {
+        order: 2; /* زر القائمة بعد اللوجو مباشرة */
+    }
+    
+    [dir="rtl"] .mobile-top-actions {
+        order: 3; /* اللغة والسلة على اليسار */
+    }
+}
+
+/* Responsive RTL */
+@media (max-width: 768px) {
+    .navbar-nav.mx-auto {
+        position: static;
+        transform: none;
+        margin: 1rem 0;
+        justify-content: center;
+    }
+    
+    /* Mobile RTL Navbar */
+    [dir="rtl"] .navbar .container {
+        flex-direction: row; /* على نفس السطر */
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    [dir="rtl"] .navbar-brand {
+        order: 1;
+        margin: 0;
+    }
+    
+    [dir="rtl"] .navbar-toggler {
+        order: 2; /* زر القائمة بعد اللوجو */
+        margin-left: 0.5rem;
+        margin-right: 0;
+    }
+    
+    [dir="rtl"] .mobile-top-actions {
+        order: 3; /* اللغة والسلة على اليسار */
+        margin-left: 0;
+        margin-right: 0;
+        gap: 0.5rem;
+    }
+    
+    [dir="rtl"] .navbar-nav.mx-auto {
+        order: 2;
+        position: static;
+        transform: none;
+        margin: 1rem 0;
+    }
+    
+    [dir="rtl"] .navbar-nav.ms-auto {
+        order: 3;
+        margin: 0 auto;
+    }
+    
+    .navbar-nav .nav-link {
+        margin: 0 0.5rem;
+    }
+    
+    .hero-text {
+        text-align: center;
+    }
+    
+    .about-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about-icon {
+        margin: 0 auto 1rem;
+    }
+    
+    .journey-content {
+        text-align: center;
+    }
+    
+    .footer .col-lg-4 {
+        text-align: center;
+    }
+    
+    .quick-links-section {
+        margin-right: 0;
+    }
+    
+    .contact-item {
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .contact-item i {
+        margin: 0 1rem 0 0;
+    }
+    
+    .contact-item span,
+    .contact-item a {
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .footer-section .footer-title {
+        text-align: center;
+    }
+    
+    .footer-section .contact-info {
+        text-align: center;
+        align-items: center;
+    }
+    
+    .footer-section .social-links {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* تنسيق أيقونات التواصل الاجتماعي في الشاشات الصغيرة */
+    [dir="rtl"] .footer .col-lg-4:nth-child(4) .social-links {
+        justify-content: center;
+        margin-top: 0.25rem;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+    /* تنسيق عمود اتصل بنا في الشاشات الصغيرة */
+    [dir="rtl"] .footer .col-lg-4:nth-child(3) .contact-info {
+        margin-top: 0.25rem;
+    }
+    
+    [dir="rtl"] .footer .col-lg-4:nth-child(4) .social-links .social-link {
+        width: 35px !important;
+        height: 35px !important;
+    }
+}
+
+/* Utility Classes RTL */
+.text-start {
+    text-align: right !important;
+}
+
+.text-end {
+    text-align: left !important;
+}
+
+.me-2 {
+    margin-right: 0 !important;
+    margin-left: 0.5rem !important;
+}
+
+.ms-2 {
+    margin-left: 0 !important;
+    margin-right: 0.5rem !important;
+}
+
+/* Bootstrap RTL Utilities */
+[dir="rtl"] .float-start {
+    float: right !important;
+}
+
+[dir="rtl"] .float-end {
+    float: left !important;
+}
+
+[dir="rtl"] .text-start {
+    text-align: right !important;
+}
+
+[dir="rtl"] .text-end {
+    text-align: left !important;
+}
+
+/* Mobile Top Actions RTL - Small Screens */
+@media (max-width: 576px) {
+    [dir="rtl"] .mobile-top-actions {
+        gap: 0.5rem;
+        margin-left: 0.3rem;
+    }
+    
+    [dir="rtl"] .mobile-top-actions .language-selector .nav-link {
+        padding: 4px 10px;
+        font-size: 0.85rem;
+    }
+    
+    [dir="rtl"] .navbar-toggler {
+        margin-right: 0.3rem;
+    }
+}
