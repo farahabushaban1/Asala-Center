@@ -87,13 +87,13 @@ Built with **PHP (no framework)** and **MySQL**, with a frontend using **HTML5 /
    php -S localhost:81 -t .
    ```
    Then open in browser:  
-   👉 `http://localhost:81`
+   👉 `http://localhost:81/AsalaCenter/index.php?lang=en`
 
 ---
 
 ## 🔐 Admin Panel
 
-- Access via: `http://localhost:81/admin`
+- Access via: `http://localhost:81/AsalaCenter/admin/index.php`
 - Login with credentials from `users` table (`role = admin`).
 - Features:
   - Manage products
