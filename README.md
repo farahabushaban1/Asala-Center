@@ -71,7 +71,7 @@ Built with **PHP (no framework)** and **MySQL**, with a frontend using **HTML5 /
    - Create a new MySQL database called `shop`
    - Import the schema file:
      ```sql
-     database/schema.sql
+     database/shop.sql
      ```
 
 3. **Config database connection:**
